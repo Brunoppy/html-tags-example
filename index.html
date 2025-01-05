@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main HTML Tags</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            color: #0056b3;
+        }
+        p {
+            margin-bottom: 15px;
+        }
+        code {
+            background-color: #eef;
+            padding: 2px 4px;
+            border-radius: 4px;
+            font-family: monospace;
+        }
+        ul, ol {
+            margin: 10px 0 20px 40px;
+        }
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        hr {
+            border: none;
+            border-top: 2px solid #ccc;
+            margin: 20px 0;
+        }
+        .highlight {
+            background-color: #fffae6;
+            padding: 5px;
+            border-left: 5px solid #ffc107;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Key HTML Tags</h1>
+    <p>
+        HTML tags are used to give meaning to content. Here, we’ll review some of the key tags.
+    </p>
+
+    <section>
+        <h2>Headings</h2>
+        <p>
+            HTML headings range from <code>&lt;h1&gt;</code> (main title) to <code>&lt;h6&gt;</code> (fifth-level subtitle). 
+            By default, browsers render these headings in decreasing font sizes. This can be customized with CSS.
+        </p>
+        <h1>&lt;h1&gt; Main Title &lt;/h1&gt;</h1>
+        <h2>&lt;h2&gt; First Subtitle &lt;/h2&gt;</h2>
+        <h3>&lt;h3&gt; Second Subtitle &lt;/h3&gt;</h3>
+        <h4>&lt;h4&gt; Third Subtitle &lt;/h4&gt;</h4>
+        <h5>&lt;h5&gt; Fourth Subtitle &lt;/h5&gt;</h5>
+        <h6>&lt;h6&gt; Fifth Subtitle &lt;/h6&gt;</h6>
+        <p class="highlight">
+            Note: The visual size of headings is controlled by the browser. CSS can be used to modify their size, color, spacing, and more.
+        </p>
+    </section>
+
+    <section>
+        <h2>Paragraphs and Line Breaks</h2>
+        <p>
+            The <code>&lt;p&gt;</code> tag defines a paragraph and automatically includes a line break after its content.
+        </p>
+        <p>Example:</p>
+        <p>Here is a paragraph.</p>
+        <p>
+            To insert a manual line break, use <code>&lt;br&gt;</code>, which is a void tag. To create a horizontal line, use <code>&lt;hr&gt;</code>.
+        </p>
+        <hr>
+        <p>The above line demonstrates the use of <code>&lt;hr&gt;</code>.</p>
+    </section>
+
+    <section>
+        <h2>Text Formatting</h2>
+        <p>The following tags allow you to style text:</p>
+        <ul>
+            <li><code>&lt;i&gt;</code>: <i>Italic text</i></li>
+            <li><code>&lt;b&gt;</code>: <b>Bold text</b></li>
+            <li><code>&lt;em&gt;</code>: <em>Emphasized text (semantic italics)</em></li>
+            <li><code>&lt;strong&gt;</code>: <strong>Strongly emphasized text (semantic bold)</strong></li>
+            <li><code>&lt;mark&gt;</code>: <mark>Highlighted text</mark></li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Lists</h2>
+        <p>HTML supports two primary types of lists:</p>
+        <h3>Unordered List (<code>&lt;ul&gt;</code>)</h3>
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ul>
+        <h3>Ordered List (<code>&lt;ol&gt;</code>)</h3>
+        <ol>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ol>
+        <p>
+            <b>Example:</b> Use an ordered list for instructions (where order matters) and an unordered list for general items (where order does not matter).
+        </p>
+    </section>
+
+    <section>
+        <h2>Links</h2>
+        <p>
+            Links are created using the <code>&lt;a&gt;</code> tag. Examples:
+        </p>
+        <p><a href="https://www.google.com">Google</a> (opens in the same tab)</p>
+        <p><a href="https://www.google.com" target="_blank">Google</a> (opens in a new tab)</p>
+        <p>Other link types:</p>
+        <ul>
+            <li><code>&lt;a href="http://example.com"&gt;</code>: Link to another website.</li>
+            <li><code>&lt;a href="page.html"&gt;</code>: Link to an internal page.</li>
+            <li><code>&lt;a href="#section"&gt;</code>: Link to a section within the same page.</li>
+            <li><code>&lt;a href="mailto:someone@example.com"&gt;</code>: Link to open the user’s email client.</li>
+        </ul>
+    </section>
+
+</body>
+</html>
